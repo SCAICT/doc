@@ -135,6 +135,11 @@ const config = {
                 theme: prismThemes.github,
                 darkTheme: prismThemes.dracula,
             },
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: false, // Set to true to disable the theme switcher
+                respectPrefersColorScheme: true,
+            },
         }),
 };
 
