@@ -11,14 +11,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "中電會 SCAICT 文檔",
-    tagline: "中電會 SCAICT 官方文檔",
+    tagline: "中電會的大小專案",
     favicon: "https://scaict.org/src/img/favicon.ico",
 
     // Set the production url of your site here
-    url: "https://g.scaict.org/doc",
+    url: "https://doc.scaict.org/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/doc/",
+    baseUrl: "/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -76,9 +76,9 @@ const config = {
                         type: "docSidebar",
                         sidebarId: "tutorialSidebar",
                         position: "left",
-                        label: "Tutorial",
+                        label: "文檔",
                     },
-                    { to: "/blog", label: "Blog", position: "left" },
+                    { to: "/blog", label: "部落格", position: "left" },
                     {
                         href: "https://github.com/SCAICT/doc",
                         label: "GitHub",
@@ -90,7 +90,7 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "Docs",
+                        title: "文檔",
                         items: [
                             {
                                 label: "Tutorial",
@@ -124,7 +124,7 @@ const config = {
                             },
                             {
                                 label: "GitHub",
-                                href: "https://github.com/facebook/docusaurus",
+                                href: "https://github.com/SCAICT",
                             },
                         ],
                     },
