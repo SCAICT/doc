@@ -1,10 +1,11 @@
 # 🎮遊戲間
+import RedText from '@site/src/components/HomepageFeatures/index';
 
 中電喵是一隻好動的貓咪，喜歡和大家玩遊戲，以下是他喜歡玩的遊戲一覽。有空的話就陪他玩一下吧！
 
 ## Capture The **Flag** (CTF)
 
-在 #ctf 討論串中電喵會提出一些小問題考考大家，夠電的你鐵定能秒答。點選**🚩回報Flag 按鈕會彈出 flag 輸入框，注意<font color=#FF0000>不要把 flag 公開打在文字頻道上</font>呦！**
+在 /#ctf 討論串中電喵會提出一些小問題考考大家，夠電的你鐵定能秒答。點選**🚩回報Flag 按鈕會彈出 flag 輸入框，注意<RedText>不要把 flag 公開打在文字頻道上</RedText>呦！**
 
 ## 數數
 
