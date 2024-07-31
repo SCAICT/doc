@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+authors: [iach526526]
+slug: game
+title: 遊戲間
+---
 # 🎮遊戲間
 import RedText from '@site/src/components/HomepageFeatures/index';
 

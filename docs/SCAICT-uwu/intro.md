@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+authors: [iach526526]
+slug: intro
+title: 快速入門
 ---
 
 # 快速入門
@@ -15,11 +18,11 @@ sidebar_position: 1
 - 在伺服器享受所有中電喵的服務
 
 ### 使用指北
-[獲得電電點](./get-point.md)
+- [獲得電電點](./get-point.md)
 
-[遊戲間](./game.md)
+- [遊戲間](./game.md)
 
-[兌換/領取獎品](/)
+- [兌換/領取獎品](./shop)
 
 ### 官網寫的不清不楚，我可以到哪裡問問題？
 - [GitHub](https://github.com/SCAICT/SCAICT-uwu/issues)

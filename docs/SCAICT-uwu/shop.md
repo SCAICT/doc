@@ -1,3 +1,10 @@
+---
+sidebar_position: 4
+authors: [iach526526]
+slug: shop
+title: 🛒中電商店
+---
+
 # 🛒中電商店
 
 [中電商店](http://store.scaict.org) 是中電喵的祖傳產業
