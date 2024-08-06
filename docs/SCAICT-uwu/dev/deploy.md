@@ -17,9 +17,11 @@ git clone https://github.com/SCAICT/SCAICT-uwu.git
 pip install -r requirements.txt
 ```
 3. 建置 SQL server
+   1. 安裝 MySQL（mariadb）
+   2. 
 (敘述待補)
-4. 執行中電喵 Discord bot 服務
+1. 執行中電喵 Discord bot 服務
 ```
 python main.py
 ```
-5. 
+1. 
