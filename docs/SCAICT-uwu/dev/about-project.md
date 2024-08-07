@@ -3,6 +3,7 @@ sidebar_position: 1
 authors: [iach526526]
 slug: about
 title: 關於這個專案
+description: 介紹一下
 ---
 
 # 關於這個專案

@@ -1,8 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 authors: [iach526526]
 slug: deploy
 title: 部屬
+description: 開始部屬中電喵
 ---
 
 ### 開始部署中電喵
