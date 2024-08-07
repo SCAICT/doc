@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 authors: [iach526526]
-slug: about
-title: 關於這個專案
+slug: deploy
+title: 部屬
 ---
 
 ### 開始部署中電喵
