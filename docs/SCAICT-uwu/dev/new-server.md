@@ -47,5 +47,47 @@ CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';--設定給程式連接的�
 GRANT SELECT, INSERT, UPDATE, DELETE ON `Discord`.* TO `user`@`%`
 ```
 ### 建立需要的表格
-## DNS 定向（可選）
-如果你是中電喵飼養員，伺服器搬家後需要重新設定中電商店網址所指向的主機；如果在自己的電腦測試，則不用操作此步驟
+參見[備份資料庫](./maintain.md#定期備份資料庫)搭配表格模板使用
+## 網站部署
+中電商店使用 flask 為框架，在本機測試，只需要使用指令
+```
+flask run
+```
+這預設會在```http://127.0.0.1:5000```開啟網頁服務。若需要讓外網可以連接，我們推薦使用 Nginx 作為網站伺服器
+
+### DNS 定向
+確保 Domain 確實指向伺服器主機
+### 安裝 Nginx
+```bash
+sudo apt update
+sudo apt install nginx
+```
+### 撰寫設定檔
+在 /etc/nginx/sites-available/ 目錄下創建一個新的 config 檔，以網域名稱當作檔名，這裡以網域```store.scaict.org```舉例：
+```
+server {
+    listen 80;
+    server_name store.scaict.org;
+
+    location / {
+        proxy_pass http://127.0.0.1:5000;  #確定 flask 實際執行的 port 號和這裡吻合
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+### 建立連結檔
+執行這則指令後，會在 sites-enabled 目錄中創建一個指向 store.scaict.org 配置文件的連結檔，使得 Nginx 能夠讀取並啟用這個網站配置，且不用把檔案複製兩份。
+```
+sudo ln -s /etc/nginx/sites-available/store.scaict.org /etc/nginx/sites-enabled/
+```
+### 測試設定檔(可選)
+```
+sudo nginx -t
+```
+### 重開 Nginx
+```
+sudo systemctl restart nginx
+```
