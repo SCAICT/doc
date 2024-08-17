@@ -15,15 +15,17 @@ const config = {
     favicon: "https://scaict.org/src/img/favicon.ico",
 
     // Set the production url of your site here
-    url: "https://doc.scaict.org/",
+    url: "https://scaict.github.io",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/",
+    baseUrl: "/doc/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "SCAICT", // Usually your GitHub org/user name.
-    projectName: "SCAICT", // Usually your repo name.
+    trailingSlash: false,
+    projectName: "doc", // Usually your repo name.
+    deploymentBranch:"gh-pages",
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
