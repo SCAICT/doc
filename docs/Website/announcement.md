@@ -29,9 +29,9 @@ sidebar_position: 5
 
 ```json
 {
-    “lcd”: {
-        “text”: “顯示文字”,
-        “link”: “下方按鈕連結”
+    "lcd": {
+        "text": "顯示文字",
+        "link": "下方按鈕連結"
     }
 }
 ```

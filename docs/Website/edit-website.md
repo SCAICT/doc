@@ -38,31 +38,31 @@ _那拜託不要亂動_
 
 ```json
 {
-    “arrowParens”: “avoid”,
-    “bracketSpacing”: true,
-    “endOfLine”: “lf”,
-    “htmlWhitespaceSensitivity”: “css”,
-    “insertPragma”: true,
-    “singleAttributePerLine”: false,
-    “bracketSameLine”: false,
-    “jsxBracketSameLine”: false,
-    “jsxSingleQuote”: false,
-    “printWidth”: 80,
-    “proseWrap”: “preserve”,
-    “quoteProps”: “as-needed”,
-    “requirePragma”: false,
-    “semi”: true,
-    “singleQuote”: false,
-    “tabWidth”: 4,
-    “trailingComma”: “es5”,
-    “useTabs”: false,
-    “embeddedLanguageFormatting”: “auto”,
-    “vueIndentScriptAndStyle”: false,
-    “parser”: “babel”
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": true,
+    "singleAttributePerLine": false,
+    "bracketSameLine": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "embeddedLanguageFormatting": "auto",
+    "vueIndentScriptAndStyle": false,
+    "parser": "babel"
   }
 ```
 
 ## 注意事項
 
 * 要製作分頁請開資料夾，並命名檔案為 `index.html`
-* 特殊活動有開倉庫可以直接[使用 GitHub Pages 部屬](如何使用-Github-Pages-部屬營隊網站%3F)。
+* 特殊活動有開倉庫可以直接[使用 GitHub Pages 部屬](./github-pages.md)。
