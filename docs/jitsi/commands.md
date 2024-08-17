@@ -72,3 +72,4 @@ docker-compose -f docker-compose.yml -f jibri.yml ps
 
 ```bash
 :%s/[{;}]/&\r/g|norm! =gg
+```
