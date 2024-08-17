@@ -1,4 +1,6 @@
 // Jitsi Meet configuration.
+<!-- truncate -->
+
 var config = {};
 
 config.hosts = {};
