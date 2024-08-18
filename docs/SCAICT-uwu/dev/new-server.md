@@ -5,6 +5,9 @@ slug: newserver
 title: 搬家後的環境準備
 description: 浪跡天涯客，何處不是家？
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## 安裝 git
 為了更方便的從遠端更新程式資料，需要安裝 git
 ```
@@ -21,19 +24,50 @@ sudo apt upgrade -y
 ```
 ## Python
 ### 安裝 python 3.11
-```
-sudo apt install python3.11
-```
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows">
+    ```
+    winget install Python.Python.3.11
+    ```
+    或是到 [Python 官網](https://www.python.org/downloads/windows/)
+  </TabItem>
+  <TabItem value="linux" label="linux">
+    ```
+    sudo apt install python3.11
+    ```
+  </TabItem>
+</Tabs>
 ### 設定虛擬環境並安裝必要 package
 這雖然不是必要的，但我們強烈建議對安裝的 package 做獨立的管理，因為中電喵可能不支援某些 package 的新版本
-```
-apt install python3-virtualenv
-```
-```
-virtualenv env-uwu
-source env-uwu/bin/activate
-pip install -r requirements.txt
-```
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows">
+    ```
+    pip3 install virtualenv
+    ```
+  </TabItem>
+  <TabItem value="linux" label="linux">
+    ```
+    apt install python3-virtualenv
+    ```
+  </TabItem>
+</Tabs>
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows">
+    ```
+    python -m venv envuwu
+    .\envuwu\Scripts\activate #Path in project root
+    pip install -r requirements.txt
+    ```
+  </TabItem>
+  <TabItem value="linux" label="linux">
+  ```bash
+    virtualenv env-uwu
+    source env-uwu/bin/activate
+    pip install -r requirements.txt
+  ```
+  </TabItem>
+</Tabs>
 ## MySQL（或是mariadb）
 ```
 sudo apt install mysql-server -y
@@ -57,7 +91,7 @@ flask run
 
 ### DNS 定向
 確保 Domain 確實指向伺服器主機
-### 安裝 Nginx
+### 安裝 Nginx(只提供 Linux 系統做法)
 ```bash
 sudo apt update
 sudo apt install nginx
