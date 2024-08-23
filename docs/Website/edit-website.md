@@ -9,12 +9,12 @@ sidebar_position: 4
 * 調整網頁排版、字體大小
 * 新增贊助廠商
 * 新增參與社團
-* 更改介紹文字及目標
-* 更改社群連結
+* 變更介紹文字及目標
+* 變更社群連結
 
 以下情況請**不要編輯**此倉庫，麻煩移駕至 [website-data](https://github.com/SCAICT/website-data)
 
-* 更改首頁 LCD 屏幕公告
+* 變更首頁 LCD 屏幕公告
 * 新增/編輯活動
 
 ## 部屬流程
@@ -59,7 +59,7 @@ _那拜託不要亂動_
     "embeddedLanguageFormatting": "auto",
     "vueIndentScriptAndStyle": false,
     "parser": "babel"
-  }
+}
 ```
 
 ## 注意事項
