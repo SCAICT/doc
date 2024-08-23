@@ -9,7 +9,7 @@
 把整個服務直接砍掉。
 
 ```python
- docker stop $(docker ps -q)
+docker stop $(docker ps -q)
 ```
 
 # Docker 環境
@@ -20,6 +20,7 @@
 docker exec -it jitsi-docker-jitsi-meet-6692439-web-1 /bin/bash
 docker exec -it jitsi-docker-jibri-c92026a-web-1 /bin/bash
 ```
+
 具體的ID可能會不太一樣，請你使用 docker ps 指令來確認
 
 常見編輯檔案如下
@@ -42,6 +43,7 @@ cd ~/.jitsi-meet-cfg/CONFIG/web/
 ```bash
 cd /usr/share/jitsi-meet
 ```
+
 基本上就是下載圖片，然後取代原本的。
 
 從官網下載圖片 (記得先 CD 到 image 資料夾)

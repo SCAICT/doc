@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # 如何在本地安裝 Prettier？
 
-在本地安裝 Prettier 可以讓你在編寫代碼時自動格式化文件。這裡我們將介紹如何使用 npm 來安裝 Prettier，並簡單介紹如何使用 yarn 和 npx。
+在本地安裝 Prettier 可以讓你在編寫代碼時自動格式化檔案。這裡我們將介紹如何使用 npm 來安裝 Prettier，並簡單介紹如何使用 yarn 和 npx。
 
 ## 使用 npm 安裝
 
@@ -30,7 +30,7 @@ prettier —version
 npm install —save-dev prettier
 ```
 
-安裝完成後，可以在 `package.json` 文件中看到 Prettier 被列為開發依賴。
+安裝完成後，可以在 `package.json` 檔案中看到 Prettier 被列為開發依賴。
 
 ## 使用 yarn 安裝
 
@@ -74,4 +74,4 @@ prettier —check .
 prettier —write .
 ```
 
-這個命令會自動格式化當前目錄下的所有文件。
+這個命令會自動格式化當前目錄下的所有檔案。

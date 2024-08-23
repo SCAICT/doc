@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "中電會 SCAICT 文檔",
+    title: "中電會 SCAICT 說明文件",
     tagline: "中電會的大小專案",
     favicon: "https://scaict.org/src/img/favicon.ico",
 
@@ -68,7 +68,7 @@ const config = {
             // Replace with your project's social card
             image: "img/docusaurus-social-card.jpg",
             navbar: {
-                title: "SCAICT 文檔",
+                title: "SCAICT 說明文件",
                 logo: {
                     alt: "SCAICT Logo",
                     src: "https://scaict.org/src/img/logo.svg",
@@ -78,7 +78,7 @@ const config = {
                         type: "docSidebar",
                         sidebarId: "tutorialSidebar",
                         position: "left",
-                        label: "文檔",
+                        label: "說明文件",
                     },
                     { to: "/blog", label: "部落格", position: "left" },
                     {
@@ -92,7 +92,7 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "文檔",
+                        title: "說明文件",
                         items: [
                             {
                                 label: "Tutorial",
