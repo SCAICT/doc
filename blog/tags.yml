@@ -6,3 +6,11 @@ hello:
   label: Hello
   permalink: /hello
   description: Hello tag description
+HITCON 2024:
+  label: HITCON 2024
+  permalink: /hitcon-2024
+  description: 中電會在 HITCON 2024 的相關文章
+SCAICT-uwu:
+  label: 中電喵
+  permalink: /scaict-uwu
+  description: 中電喵-一隻住在中電會 Discord 的喵喵
