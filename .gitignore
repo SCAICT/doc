@@ -18,3 +18,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# 這是用來貼上圖片的暫時 markdown ，創建在任何資料夾在裡面貼上可以快速把剪貼簿的圖片儲存在該資料夾
+paste.md 
