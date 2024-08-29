@@ -1,10 +1,17 @@
 # 中電會 第3屆專案開發說明文件
-
+![alt text](./static/img/index-demo.png)
 > start at 7/26/2024
 
 為了不要被第4屆罵說第3屆學長伺服器設後不理，撰寫了這份說明文件。
+目前網站內有兩大主題：
+## Document
+有關中電會的大小專案使用方法和維護須知
 
+![alt text](./static/img/doc-demo.png)
+## Blog
+研究成果、教學和大事記
 
+![alt text](./static/img/blog-demo.png)
 ## 本地開發
 
 ### Installation
