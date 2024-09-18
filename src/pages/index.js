@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`開始閱讀 ${siteConfig.title}`}
+      description="中電會文檔網站提供了有關「中部高中電資社團聯合會議」（Student Club's Association of Information in Central Taiwan,SCAICT）的發展歷程、專案介紹以及部落格文章。<head />">
       <HomepageHeader />
       <main>
         {/* <HomepageFeatures /> */}
