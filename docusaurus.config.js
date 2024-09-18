@@ -66,7 +66,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace with your project's social card
-            image: "img/docusaurus-social-card.jpg",
+            image: "img/SCAICT-social-card.png",
             navbar: {
                 title: "SCAICT 說明文件",
                 logo: {
