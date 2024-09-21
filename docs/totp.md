@@ -56,7 +56,6 @@ export const AllowedEmails = [
 ];
 ```
 
-請有編輯權限的人在收到請求後確認並加入 email。
 
 ## 注意事項
 

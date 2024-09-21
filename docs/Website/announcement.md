@@ -55,23 +55,23 @@ sidebar_position: 5
 * 請勿加上其他 markdown 語法，若需要換行請使用 `<br>`。空白行將忽略，可視整潔需求加上。
 * 為維持版面整潔，請盡量保持活動訊息在三行以內，日期、時間、地點、費用一行以內。
 * 圖片可選，請貼上圖片連結。若無圖片可以省略。
-*活動部屬需要約 30 秒，請耐心等待。
+*活動部署需要約 30 秒，請耐心等待。
 
-## 活動公告部屬流程
+## 活動公告部署流程
 
 GitHub Action 會在你編輯活動公告後自動將其轉成 JSON 格式供網站前端使用
 
 ```mermaid
 graph TD
-  A[Push Event] —>|events.md, convert.js| B(Trigger Workflow)
-  B —> C{Paths Match}
-  C —>|Yes| D[Checkout Code]
-  D —> E[Setup Node.js]
-  E —> F[Run Script]
-  F —> G[Commit and Push if Changed]
-  G —>|Yes| H[Update events.json]
-  G —>|No| I[No changes in events.json]
-  H —> J[Finish]
-  I —> J[Finish]
-  C —>|No| J[Finish]
+  A[Push Event] -->|events.md, convert.js| B(Trigger Workflow)
+  B --> C{Paths Match}
+  C -->|Yes| D[Checkout Code]
+  D --> E[Setup Node.js]
+  E --> F[Run Script]
+  F --> G[Commit and Push if Changed]
+  G -->|Yes| H[Update events.json]
+  G -->|No| I[No changes in events.json]
+  H --> J[Finish]
+  I --> J[Finish]
+  C -->|No| J[Finish]
 ```

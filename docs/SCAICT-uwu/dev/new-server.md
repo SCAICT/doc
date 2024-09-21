@@ -68,8 +68,8 @@ sudo apt upgrade -y
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
     ```
-    python -m venv envuwu
-    .\envuwu\Scripts\activate #Path in project root
+    python -m virtualenv env-uwu
+    .\env-uwu\Scripts\activate &:: Path in project root
     pip install -r requirements.txt
     ```
   </TabItem>
@@ -95,7 +95,7 @@ sudo systemctl status mysql
 ```mysql
 CREATE DATABASE `Discord`;
 CREATE USER 'user_name'@'%' IDENTIFIED BY 'password';--設定給程式連接的資料庫帳號，這要一併輸入在 .env
-GRANT SELECT, INSERT, UPDATE, DELETE ON `Discord`.* TO `user`@`%`
+GRANT SELECT, INSERT, UPDATE, DELETE ON `Discord`.* TO `user`@`%`;
 ```
 
 ### 建立需要的資料表
@@ -110,7 +110,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON `Discord`.* TO `user`@`%`
 flask run
 ```
 
-這預設會在```http://127.0.0.1:5000```開啟網頁服務。若需要讓外網可以連接，我們推薦使用 Nginx 作為網站伺服器
+這預設會在 ```http://127.0.0.1:5000``` 開啟網頁服務。若需要讓外網可以連接，我們推薦使用 Nginx 作為網站伺服器
 
 ### DNS 定向
 
@@ -125,7 +125,7 @@ sudo apt install nginx
 
 ### 撰寫組態檔
 
-在 /etc/nginx/sites-available/ 目錄下新增一個新的 config 檔，以網域名稱當作檔名，這裡以網域```store.scaict.org```舉例：
+在 `/etc/nginx/sites-available/` 目錄下新增一個新的 config 檔，以網域名稱當作檔名，這裡以網域 ```store.scaict.org``` 舉例：
 
 ```
 server {
@@ -144,7 +144,7 @@ server {
 
 ### 建立連結檔
 
-執行這則指令後，會在 sites-enabled 目錄中新增一個指向 store.scaict.org 組態檔的連結檔，使得 Nginx 能夠讀取並啟用這個網站組態，且不用把檔案複製兩份。
+執行這則指令後，會在 `sites-enabled/` 目錄中新增一個指向 `store.scaict.org` 組態檔的連結檔，使得 Nginx 能夠讀取並啟用這個網站組態，且不用把檔案複製兩份。
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/store.scaict.org /etc/nginx/sites-enabled/

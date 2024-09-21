@@ -8,7 +8,7 @@ sidebar_position: 6
 
 ## 設定 GitHub Actions
 
-首先，你需要在專案根目錄下新增一個 `.github/workflows` 目錄，並在該目錄下新增一個名為 `prettier.yml` 的檔案。這個檔案將包含 GitHub Actions 的組態。
+首先，你需要在專案根目錄下新增一個 `.github/workflows/` 目錄，並在該目錄下新增一個名為 `prettier.yml` 的檔案。這個檔案將包含 GitHub Actions 的組態。
 
 ### 範例組態檔
 
@@ -30,32 +30,32 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ‘20’
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install prettier
 
       - name: Run Prettier check
         id: prettier
-        run: npx prettier —check .
+        run: npx prettier --check .
 
       - name: Run Prettier format (if needed)
         if: ${{ failure() }}
-        run: npx prettier —write .
+        run: npx prettier --write .
 
       - name: Create Pull Request
         if: ${{ failure() }}
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ‘fix: format code with Prettier’
+          commit-message: 'fix: format code with Prettier'
           branch: prettier-fixes
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: true
           delete-branch: true
-          title: ‘fix: format code with Prettier’
-          body: ‘This pull request fixes the code formatting issues identified by Prettier.’
+          title: 'fix: format code with Prettier'
+          body: 'This pull request fixes the code formatting issues identified by Prettier.'
 ```
 
 ### 組態說明
@@ -68,8 +68,8 @@ jobs:
 - **Checkout repository**: 將專案的程式碼檢出到 runner 環境中，使後續步驟可以存取代碼。
 - **Set up Node.js**: 設定 Node.js 環境，這裡我們使用了版本 20。
 - **Install dependencies**: 安裝 Prettier 作為依賴套件，確保我們可以在後續步驟中使用它。
-- **Run Prettier check**: 使用 `npx prettier —check .` 檢查所有檔案是否符合 Prettier 的格式規範。如果任何檔案不符合規範，這一步會失敗。
-- **Run Prettier format (if needed)**: 如果上一步檢查失敗，這裡會執行 `npx prettier —write .` 自動格式化所有不符合規範的檔案。
+- **Run Prettier check**: 使用 `npx prettier --check .` 檢查所有檔案是否符合 Prettier 的格式規範。如果任何檔案不符合規範，這一步會失敗。
+- **Run Prettier format (if needed)**: 如果上一步檢查失敗，這裡會執行 `npx prettier --write .` 自動格式化所有不符合規範的檔案。
 - **Create Pull Request**: 如果有檔案被格式化，這一步會自動建立一個新的 pull request，提交格式化後的程式碼。使用 `peter-evans/create-pull-request@v5` 操作來自動建立 PR，並設定相關的 commit 資訊和 PR 標題、描述。
 
 ## 部署和使用

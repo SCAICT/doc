@@ -12,7 +12,7 @@ description: 這 很 重 要！
 
 ## 如何在伺服器上長時間運作？
 
-若在伺服器上的專案資料夾執行 "python main.py" 這個指令只會在 ssh 連線階段執行這個工作，這適合短時間的測試，斷開終端機後服務就會關閉。所以要在啟動指令前加上 ***nohop*** 讓工作可以在背景持續執行。此時程式所有的 print 或 error 回報預設會在該專案目錄下面的 nohup.out ，想要變更儲存位置和檔名可以使用管道符號。
+若在伺服器上的專案資料夾執行 `python main.py` 這個指令只會在 ssh 連線階段執行這個工作，這適合短時間的測試，斷開終端機後服務就會關閉。所以要在啟動指令前加上 ***nohup*** 讓工作可以在背景持續執行。此時程式所有的 print 或 error 回報預設會在該專案目錄下面的 `nohup.out` ，想要變更儲存位置和檔名可以使用管道符號。
 
 利用管道符號把程式輸出存在 `/var/log/DiscordBot/` ，並用時間命名
 
@@ -51,7 +51,7 @@ nohup flask run &>/var/log/uwuStore/Log_$(date +%Y-%m-%dT%H-%M-%S).log&
 
 ### mysqldump 指令
 
-定期備份資料庫是一件很重要的事，使用 mysqldump 指令把某個 database 的表格樣式和儲存的資料都儲存到一個 .spl 檔。裡面會存構成目前資料庫需要的指令。
+定期備份資料庫是一件很重要的事，使用 mysqldump 指令把某個 database 的表格樣式和儲存的資料都儲存到一個 .sql 檔。裡面會存構成目前資料庫需要的指令。
 
 ```bash
 mysqldump -u [username] -p [database] > backup.sql # 把現在資料庫的內容輸出成 .sql 檔儲存

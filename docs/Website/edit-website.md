@@ -17,11 +17,11 @@ sidebar_position: 4
 * 變更首頁 LCD 屏幕公告
 * 新增/編輯活動
 
-## 部屬流程
+## 部署流程
 
 ```mermaid
-  graph LR;
-      a[push 至 main]—>b[壓縮至 publish 分支]—>c[部屬至 Vercel]
+  graph LR
+      a[push 至 main]-->b[壓縮至 publish 分支]-->c[部署至 Vercel]
 ```
 
 ## 編輯指引
@@ -65,4 +65,4 @@ _那拜託不要亂動_
 ## 注意事項
 
 * 要製作分頁請開資料夾，並命名檔案為 `index.html`
-* 特殊活動有開倉庫可以直接[使用 GitHub Pages 部屬](./github-pages.md)。
+* 特殊活動有開倉庫可以直接[使用 GitHub Pages 部署](./github-pages.md)。

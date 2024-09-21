@@ -13,7 +13,7 @@ import RedText from '@site/src/components/HomepageFeatures/index';
 
 ## Capture The **Flag** (CTF)
 
-在 /#ctf 討論串中電喵會提出一些小問題考考大家，夠電的你鐵定能秒答。點選**🚩回報Flag 按鈕會彈出 flag 輸入框，注意<RedText>不要把 flag 公開打在文字頻道上</RedText>呦！**
+在 #ctf 討論串中電喵會提出一些小問題考考大家，夠電的你鐵定能秒答。點選**🚩回報Flag 按鈕會彈出 flag 輸入框，注意<RedText>不要把 flag 公開打在文字頻道上</RedText>呦！**
 
 ## 數數
 
@@ -23,7 +23,7 @@ import RedText from '@site/src/components/HomepageFeatures/index';
 
 ## 非常好色
 
-在 #非常好色 頻道，輸入 3 個 16 進位數字分別代表 RGB，，猜猜中電喵所指顏色的 16 進位色碼，中電喵會提示你離正確答案有多接近。猜中可以獲得電電點
+在 #非常好色 頻道，輸入 3 個 16 進位數字分別代表 RGB，猜猜中電喵所指顏色的 16 進位色碼，中電喵會提示你離正確答案有多接近。猜中可以獲得電電點
 ![](../../static/img/guess-color.png)
 ![](../../static/img/hex-color-rule.png)
 

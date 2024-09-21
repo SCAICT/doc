@@ -12,11 +12,11 @@ description: 介紹一下
 
 ## 簡介
 
-每頁會解釋中電喵 cog 裡面的 Python 檔案，相關的功能會放在同一個檔案，日後有新功能務必用檔名聯想這是幹什麼用的。cog 裡面的程式基本上都是核心的聊天指令，太胖或是太通用的 function 可以放到 cog/core 裡面方便引入。
+每頁會解釋中電喵 cog 裡面的 Python 檔案，相關的功能會放在同一個檔案，日後有新功能務必用檔名聯想這是幹什麼用的。cog 裡面的程式基本上都是核心的聊天指令，太胖或是太通用的 function 可以放到 `cog/core/` 裡面方便引入。
 
 - 舉例：
 
-cog/core SQL.py 檔有一個 function write 需要呼叫，應該寫成：
+`cog/core/sql.py` 有一個 function write 需要呼叫，應該寫成：
 
 ```py
 from cog.core.sql import write

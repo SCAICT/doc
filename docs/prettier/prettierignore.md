@@ -67,7 +67,7 @@ src/ignore-this-file.js
 你可以使用以下命令來檢查 `.prettierignore` 檔案的效果，確認指定的檔案是否已被忽略：
 
 ```bash
-prettier —check .
+prettier --check .
 ```
 
 這個命令會列出所有未被忽略並且需要格式化的檔案。
