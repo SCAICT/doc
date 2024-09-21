@@ -56,7 +56,6 @@ export const AllowedEmails = [
 ];
 ```
 
-
 ## 注意事項
 
 1. **請勿設定其他金鑰**

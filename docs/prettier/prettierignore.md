@@ -35,23 +35,27 @@ src/ignore-this-file.js
 以下是一些常見的 `.prettierignore` 組態項：
 
 - **忽略依賴套件目錄**：
+
   ```plaintext
   node_modules
   ```
 
 - **忽略編譯輸出目錄**：
+
   ```plaintext
   dist
   build
   ```
 
 - **忽略特定檔案類型**：
+
   ```plaintext
   *.min.js
   *.bundle.js
   ```
 
 - **忽略特定組態檔**：
+
   ```plaintext
   .env
   ```
