@@ -30,7 +30,7 @@ nohup flask run &>/var/log/uwuStore/Log_$(date +%Y-%m-%dT%H-%M-%S).log&
 
 執行後 CLI 會顯示 Process ID，下面的例子是開啟了一個 Process ID 為 48763 的工作。這個 ID 是唯一的，用來辨別這個運行的工作。每次開啟服務後建議寫在記事本，下次關服務會比較好找到這個服務。
 
-```
+```bash
 [2] 48763
 ```
 
@@ -38,8 +38,8 @@ nohup flask run &>/var/log/uwuStore/Log_$(date +%Y-%m-%dT%H-%M-%S).log&
 
 關閉用 htop 運行中的服務，可以使用：
 
-- ```kill <Process ID>```
-- ```htop```找到要關閉的 Process 按下 F9
+- `kill <Process ID>`
+- `htop`找到要關閉的 Process 按下 F9
 
 ![htop-demo](../../../static/img/htop.png)
 

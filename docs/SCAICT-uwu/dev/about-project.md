@@ -16,7 +16,7 @@ description: 介紹一下
 
 以下是中電喵專案的檔案樹，為了篇幅省略了一些小檔案或不重要的資料夾（如 `.git` ），這裡著重定義資料夾之間的相對關係。
 
-```
+```plaintext
 |   app.py
 |   main.py
 |   requirements.txt

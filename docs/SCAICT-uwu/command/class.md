@@ -17,7 +17,7 @@ description: 本頁面包括新增、發送、領取特殊身分組
 - 限制使用權限:true
   - admin only
 
-> ```add_class {class_code} {name} {theme}{teacher}{time}```
+> `add_class {class_code} {name} {theme}{teacher}{time}`
 
 - class_code：兌換代碼
 - name：代碼對應分送的身分組名稱

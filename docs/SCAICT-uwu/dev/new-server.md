@@ -25,7 +25,7 @@ git clone https://github.com/SCAICT/SCAICT-uwu.git
 
 ## 更新 apt install
 
-```
+```bash
 sudo apt update
 sudo apt upgrade -y
 ```
@@ -36,13 +36,13 @@ sudo apt upgrade -y
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
-    ```
+    ```cmd
     winget install Python.Python.3.11
     ```
     或是到 [Python 官網](https://www.python.org/downloads/windows/)
   </TabItem>
   <TabItem value="linux" label="linux">
-    ```
+    ```bash
     sudo apt install python3.11
     ```
   </TabItem>
@@ -54,12 +54,12 @@ sudo apt upgrade -y
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
-    ```
+    ```cmd
     pip3 install virtualenv
     ```
   </TabItem>
   <TabItem value="linux" label="linux">
-    ```
+    ```bash
     apt install python3-virtualenv
     ```
   </TabItem>
@@ -67,7 +67,7 @@ sudo apt upgrade -y
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
-    ```
+    ```cmd
     python -m virtualenv env-uwu
     .\env-uwu\Scripts\activate &:: Path in project root
     pip install -r requirements.txt
@@ -110,7 +110,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON `Discord`.* TO `user`@`%`;
 flask run
 ```
 
-這預設會在 ```http://127.0.0.1:5000``` 開啟網頁服務。若需要讓外網可以連接，我們推薦使用 Nginx 作為網站伺服器
+這預設會在 `http://127.0.0.1:5000` 開啟網頁服務。若需要讓外網可以連接，我們推薦使用 Nginx 作為網站伺服器
 
 ### DNS 定向
 
@@ -125,9 +125,9 @@ sudo apt install nginx
 
 ### 撰寫組態檔
 
-在 `/etc/nginx/sites-available/` 目錄下新增一個新的 config 檔，以網域名稱當作檔名，這裡以網域 ```store.scaict.org``` 舉例：
+在 `/etc/nginx/sites-available/` 目錄下新增一個新的 config 檔，以網域名稱當作檔名，這裡以網域 `store.scaict.org` 舉例：
 
-```
+```nginx
 server {
     listen 80;
     server_name store.scaict.org;
