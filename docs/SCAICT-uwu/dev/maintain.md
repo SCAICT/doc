@@ -19,7 +19,7 @@ description: 這 很 重 要！
 ### 執行中電喵本體
 
 ```bash
-nohup python3 main.py &>/var/log/DiscordBot/Log_$(date +%Y-%m-%dT%H-%M-%S).log&
+nohup python3 main.py &>/var/log/Bot_uwu/Log_$(date +%Y-%m-%dT%H-%M-%S).log&
 ```
 
 ### 中電商店
